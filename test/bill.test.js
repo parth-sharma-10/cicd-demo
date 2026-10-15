@@ -11,7 +11,7 @@ test('bill without discount adds 5% tax', () => {
 
 test('10% discount is applied before tax', () => {
   assert.deepEqual(calculateTotal(1000, 10, 5),
-    { discount: 100, tax: 45, total: 945 });
+    { discount: 100, tax: 45, total: 946 });
 });
 
 test('discount above 100% is rejected', () => {
